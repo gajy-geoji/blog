@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../config';
+---
+
+<BaseLayout title="소개">
+  <article class="container article about">
+    <header class="article-header">
+      <p class="eyebrow">About</p>
+      <h1>안녕하세요, {siteConfig.author}입니다.</h1>
+      <p class="article-description">
+        더 나은 소프트웨어를 만들기 위해 배우고 실험한 내용을 기록합니다.
+      </p>
+    </header>
+    <div class="prose">
+      <h2>이 블로그에서는</h2>
+      <p>
+        개발 중 마주친 문제의 해결 과정, 새로 익힌 기술, 오래 기억하고 싶은 설계의
+        이유를 씁니다. 이 페이지를 본인의 소개와 관심 분야로 바꿔 주세요.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

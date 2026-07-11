@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# generated output
+dist/
+.astro/
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# operating system and editor files
+.DS_Store
+.idea/
+.vscode/

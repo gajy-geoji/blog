@@ -1,0 +1,20 @@
+---
+import PostCard from '../../components/PostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPublishedPosts } from '../../lib/posts';
+
+const posts = await getPublishedPosts();
+---
+
+<BaseLayout title="글" description="개발 과정에서 배운 내용을 정리한 글 목록">
+  <section class="container page-header">
+    <p class="eyebrow">Archive</p>
+    <h1>모든 글</h1>
+    <p>총 {posts.length}개의 기록이 있습니다.</p>
+  </section>
+  <section class="container section section-compact">
+    <div class="post-list">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  </section>
+</BaseLayout>

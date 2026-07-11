@@ -1,0 +1,24 @@
+---
+import type { BlogPost } from '../lib/posts';
+import { formatDate } from '../lib/posts';
+
+interface Props {
+  post: BlogPost;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="post-card">
+  <div class="post-meta">
+    <time datetime={post.data.publishedAt.toISOString()}>{formatDate(post.data.publishedAt)}</time>
+    {post.data.draft && <span class="draft-badge">초안</span>}
+  </div>
+  <h2><a href={`/posts/${post.id}`}>{post.data.title}</a></h2>
+  <p>{post.data.description}</p>
+  {post.data.tags.length > 0 && (
+    <ul class="tag-list" aria-label="태그">
+      {post.data.tags.map((tag) => <li>#{tag}</li>)}
+    </ul>
+  )}
+</article>
