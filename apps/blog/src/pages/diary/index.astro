@@ -1,0 +1,20 @@
+---
+import DiaryCard from '../../components/DiaryCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPublishedDiaries } from '../../lib/diaries';
+
+const diaries = await getPublishedDiaries();
+---
+
+<BaseLayout title="일기" description="기술 밖의 생각과 하루를 남긴 일기 목록">
+  <section class="container page-header">
+    <p class="eyebrow">Diary</p>
+    <h1>일기</h1>
+    <p>총 {diaries.length}개의 일기가 있습니다.</p>
+  </section>
+  <section class="container section section-compact">
+    <div class="post-list">
+      {diaries.map((entry) => <DiaryCard entry={entry} />)}
+    </div>
+  </section>
+</BaseLayout>
