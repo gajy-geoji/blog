@@ -1,6 +1,6 @@
 ---
 name: write-blog-post
-description: Create, research, revise, and validate Korean technical blog posts for this Astro repository. Use when Codex is asked to turn a topic, notes, code changes, debugging experience, or existing draft into a post under src/content/blog; improve a post's structure or technical accuracy; prepare frontmatter and a stable slug; or review a post before publication.
+description: Create, research, revise, and validate Korean technical blog posts for this Astro monorepo. Use when Codex is asked to turn a topic, notes, code changes, debugging experience, a related POC, or an existing draft into a post under apps/blog/src/content/blog; improve a post's structure or technical accuracy; prepare frontmatter and a stable slug; or review a post before publication.
 ---
 
 # Write Blog Post
@@ -9,10 +9,11 @@ Create posts that are useful, technically defensible, and ready for this reposit
 
 ## Establish the assignment
 
-1. Read `src/content.config.ts`, `src/content/AGENTS.md`, and `docs/editorial-guide.md`.
+1. Read `apps/blog/src/content.config.ts`, `apps/blog/src/content/AGENTS.md`, and `docs/editorial-guide.md`.
 2. Inspect nearby posts to match repository conventions without copying their wording.
-3. Identify the topic, target reader, intended takeaway, and whether the request is for an outline, draft, revision, or publication review.
-4. Make low-risk editorial assumptions when details are missing. Ask only when a missing choice would materially change the article.
+3. Inspect `pocs` for experiments related to the topic and verify any referenced behavior from their source and tests.
+4. Identify the topic, target reader, intended takeaway, and whether the request is for an outline, draft, revision, or publication review.
+5. Make low-risk editorial assumptions when details are missing. Ask only when a missing choice would materially change the article.
 
 ## Research and verify
 
@@ -31,8 +32,8 @@ Create posts that are useful, technically defensible, and ready for this reposit
 
 ## Draft or revise
 
-1. Choose a stable lowercase kebab-case filename under `src/content/blog`.
-2. Populate frontmatter exactly as defined in `src/content.config.ts`.
+1. Choose a stable lowercase kebab-case filename under `apps/blog/src/content/blog`.
+2. Populate frontmatter exactly as defined in `apps/blog/src/content.config.ts`.
 3. Set `draft: true` for a new post unless the user explicitly requests publication.
 4. Write in Korean unless the user requests another language.
 5. Keep examples focused and use language-tagged fenced code blocks.

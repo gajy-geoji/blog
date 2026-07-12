@@ -1,8 +1,8 @@
 # Blog content guidance
 
-- Apply these rules to posts under `src/content/blog`.
+- Apply these rules to posts under `apps/blog/src/content/blog`.
 - Name post files with a stable lowercase kebab-case slug, for example `astro-content-collections.md`.
-- Use the frontmatter schema from `src/content.config.ts`.
+- Use the frontmatter schema from `apps/blog/src/content.config.ts`.
 - Include `title`, `description`, `publishedAt`, `tags`, and `draft`.
 - Add `updatedAt` only when revising a published post substantially.
 - Start new posts with `draft: true` unless the user explicitly asks to publish.

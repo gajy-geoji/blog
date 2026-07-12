@@ -6,7 +6,9 @@ settings:
 
 importers:
 
-  .:
+  .: {}
+
+  apps/blog:
     dependencies:
       '@astrojs/mdx':
         specifier: ^7.0.2

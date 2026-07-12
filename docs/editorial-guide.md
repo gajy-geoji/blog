@@ -43,7 +43,7 @@
 ## 발행 전 확인
 
 - 제목과 설명이 본문을 정확히 대표하는가?
-- frontmatter가 `src/content.config.ts`의 스키마와 일치하는가?
+- frontmatter가 `apps/blog/src/content.config.ts`의 스키마와 일치하는가?
 - 코드와 명령이 재현 가능하거나 검증 한계가 표시되어 있는가?
 - 링크와 기술적 주장이 확인되었는가?
 - 초안은 `draft: true`인가?
