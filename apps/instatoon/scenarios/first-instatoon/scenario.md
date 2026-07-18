@@ -1,8 +1,10 @@
 ---
 title: 첫 번째 인스타툰 시나리오
 description: 인스타툰 제작 자료를 한곳에서 관리하기 위한 시나리오 초안입니다.
-publishedAt: 2026-07-18
-draft: true
+createdAt: 2026-07-18
+status: draft
+characters:
+  - qq
 ---
 
 ## 한 줄 이야기

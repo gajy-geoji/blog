@@ -4,6 +4,7 @@
 
 - This repository is a pnpm monorepo containing the Astro blog, related POCs, and reusable packages.
 - Keep deployable applications in `apps`, experiments in `pocs`, and proven reusable code in `packages`.
+- Keep the blog-independent Instagram comic production workspace in `apps/instatoon`.
 - Do not promote POC code into `packages` until at least two consumers or a clear reuse requirement exists.
 - Use `workspace:*` for dependencies between workspace packages.
 - Write reader-facing content in Korean unless the user requests another language.

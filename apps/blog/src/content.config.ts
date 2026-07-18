@@ -14,17 +14,4 @@ const blog = defineCollection({
   }),
 });
 
-const instatoon = defineCollection({
-  loader: glob({
-    base: './src/content/instatoon/scenarios',
-    pattern: '**/index.{md,mdx}',
-  }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    publishedAt: z.coerce.date(),
-    draft: z.boolean().default(false),
-  }),
-});
-
-export const collections = { blog, instatoon };
+export const collections = { blog };

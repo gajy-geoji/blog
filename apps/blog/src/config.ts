@@ -6,7 +6,6 @@ export const siteConfig = {
   navigation: [
     { href: '/', label: '홈' },
     { href: '/posts', label: '글' },
-    { href: '/instatoon', label: '인스타툰' },
     { href: '/about', label: '소개' },
   ],
 } as const;

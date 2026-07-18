@@ -51,6 +51,10 @@ draft: true
 
 재사용이 검증된 코드만 `packages`로 옮기고 다른 workspace에서는 `workspace:*` 의존성으로 연결합니다.
 
+## 인스타툰 자료
+
+블로그에 게시하지 않는 인스타툰 제작 자료는 `apps/instatoon`에서 독립적으로 관리합니다. 캐릭터 설정과 기준 이미지, 공통 생성 프롬프트, 시나리오와 컷별 결과물을 블로그 애플리케이션과 분리해 보관합니다.
+
 ## 운영 전 설정
 
 1. `apps/blog/src/config.ts`에서 블로그 이름, 설명, 작성자 정보를 변경합니다.
@@ -65,7 +69,8 @@ SITE_URL=https://example.com pnpm build
 
 ```text
 apps/
-└── blog/              Astro 블로그
+├── blog/              Astro 블로그
+└── instatoon/         인스타툰 제작 자료 작업공간
 pocs/                  글과 아이디어를 검증하는 독립 실험
 packages/              검증된 재사용 패키지
 docs/                  편집 가이드와 공유 문서
