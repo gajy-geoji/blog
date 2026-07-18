@@ -7,6 +7,7 @@
 - Blog posts must include `title`, `description`, `publishedAt`, `tags`, and `draft`.
 - Each Instagram comic scenario belongs in `instatoon/scenarios/<slug>/index.md` and must include `title`, `description`, `publishedAt`, and `draft`.
 - Keep shared character profiles and reference images under `instatoon/characters/<character-slug>`.
+- Keep character identity, personality, and appearance in `profile.md`; keep image-reference priority and rendering rules in `reference-guide.md`.
 - Keep reusable style, character, and panel-generation prompts under `instatoon/prompts`.
 - Keep episode-specific generated cuts under the scenario's `assets` directory; only scenario `index.md` files are published as pages.
 - Add `updatedAt` to a blog post only when revising a published post substantially.
