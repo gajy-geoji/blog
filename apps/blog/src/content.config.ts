@@ -14,8 +14,11 @@ const blog = defineCollection({
   }),
 });
 
-const diary = defineCollection({
-  loader: glob({ base: './src/content/diary', pattern: '**/*.{md,mdx}' }),
+const instatoon = defineCollection({
+  loader: glob({
+    base: './src/content/instatoon/scenarios',
+    pattern: '**/index.{md,mdx}',
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -24,4 +27,4 @@ const diary = defineCollection({
   }),
 });
 
-export const collections = { blog, diary };
+export const collections = { blog, instatoon };
